@@ -13,6 +13,8 @@
 		F9E228091EEFCA7800015EF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E228071EEFCA7800015EF6 /* Main.storyboard */; };
 		F9E2280B1EEFCA7800015EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E2280A1EEFCA7800015EF6 /* Assets.xcassets */; };
 		F9E2280E1EEFCA7800015EF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9E2280C1EEFCA7800015EF6 /* LaunchScreen.storyboard */; };
+		F9E228171EEFCAE200015EF6 /* player.txt in Resources */ = {isa = PBXBuildFile; fileRef = F9E228161EEFCAE200015EF6 /* player.txt */; };
+		F9E2281C1EEFCDE600015EF6 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E2281A1EEFCDE600015EF6 /* PlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		F9E2280A1EEFCA7800015EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9E2280D1EEFCA7800015EF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9E2280F1EEFCA7800015EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9E228161EEFCAE200015EF6 /* player.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = player.txt; sourceTree = "<group>"; };
+		F9E228191EEFCDE600015EF6 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		F9E2281A1EEFCDE600015EF6 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		F9E227FD1EEFCA7800015EF6 /* NBA50 */ = {
 			isa = PBXGroup;
 			children = (
+				F9E228181EEFCDC000015EF6 /* Controllers */,
 				F9E228011EEFCA7800015EF6 /* AppDelegate.h */,
 				F9E228021EEFCA7800015EF6 /* AppDelegate.m */,
 				F9E228041EEFCA7800015EF6 /* ViewController.h */,
@@ -74,9 +80,27 @@
 		F9E227FE1EEFCA7800015EF6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F9E228151EEFCAC300015EF6 /* Resources */,
 				F9E227FF1EEFCA7800015EF6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9E228151EEFCAC300015EF6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F9E228161EEFCAE200015EF6 /* player.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F9E228181EEFCDC000015EF6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F9E228191EEFCDE600015EF6 /* PlayerViewController.h */,
+				F9E2281A1EEFCDE600015EF6 /* PlayerViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9E228171EEFCAE200015EF6 /* player.txt in Resources */,
 				F9E2280E1EEFCA7800015EF6 /* LaunchScreen.storyboard in Resources */,
 				F9E2280B1EEFCA7800015EF6 /* Assets.xcassets in Resources */,
 				F9E228091EEFCA7800015EF6 /* Main.storyboard in Resources */,
@@ -152,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9E228061EEFCA7800015EF6 /* ViewController.m in Sources */,
+				F9E2281C1EEFCDE600015EF6 /* PlayerViewController.m in Sources */,
 				F9E228031EEFCA7800015EF6 /* AppDelegate.m in Sources */,
 				F9E228001EEFCA7800015EF6 /* main.m in Sources */,
 			);
@@ -275,6 +301,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5ZDZ2RA37W;
 				INFOPLIST_FILE = NBA50/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ashoka.NBA50;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,6 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5ZDZ2RA37W;
 				INFOPLIST_FILE = NBA50/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ashoka.NBA50;
 				PRODUCT_NAME = "$(TARGET_NAME)";
